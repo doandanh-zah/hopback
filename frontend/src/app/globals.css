@@ -4,12 +4,27 @@
 
 :root { color-scheme: dark; }
 body {
-  background: radial-gradient(circle at 20% 0%, #1d0d38 0%, #09090b 45%, #050507 100%);
+  background:
+    radial-gradient(circle at 10% 10%, rgba(124, 58, 237, 0.35) 0%, transparent 35%),
+    radial-gradient(circle at 90% 20%, rgba(6, 182, 212, 0.25) 0%, transparent 32%),
+    linear-gradient(180deg, #07070b 0%, #050507 100%);
   min-height: 100vh;
   color: #f3f4f6;
 }
 .pill-btn {
-  @apply inline-flex items-center justify-center rounded-full px-6 py-3 font-semibold transition-all;
+  @apply inline-flex items-center justify-center rounded-full px-6 py-3 font-semibold transition-all duration-300;
   background: linear-gradient(90deg,#7c3aed,#06b6d4);
   box-shadow: 0 0 18px rgba(124,58,237,.45);
+}
+.pill-btn:hover {
+  transform: translateY(-1px) scale(1.01);
+  box-shadow: 0 0 30px rgba(34,211,238,.35);
+}
+.panel {
+  @apply rounded-3xl border border-zinc-800/80 bg-zinc-900/50 backdrop-blur-xl;
+}
+.gradient-text {
+  background: linear-gradient(90deg,#a78bfa,#67e8f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
