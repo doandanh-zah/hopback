@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+body {
+  background: radial-gradient(circle at 20% 0%, #1d0d38 0%, #09090b 45%, #050507 100%);
+  min-height: 100vh;
+  color: #f3f4f6;
+}
+.pill-btn {
+  @apply inline-flex items-center justify-center rounded-full px-6 py-3 font-semibold transition-all;
+  background: linear-gradient(90deg,#7c3aed,#06b6d4);
+  box-shadow: 0 0 18px rgba(124,58,237,.45);
+}
